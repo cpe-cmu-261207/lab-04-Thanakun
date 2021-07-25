@@ -191,11 +191,9 @@ function removeLocalTodos(todo) {
 
 function saveLocalDone(doneitem) {
     let dones;
-    // if don't have locoal storage = create an array
     if (localStorage.getItem('dones') === null) {
         dones = [];
     }
-    // if have locoal storage = reload it
     else {
         dones = JSON.parse(localStorage.getItem('dones'))
     }
